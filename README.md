@@ -1,64 +1,82 @@
-# @marrocode/\* plugins
 
-```
-npm run setup
-npm start
-```
+# @marrocode/* Plugins Workspace
+
+This workspace manages the full suite of `@marrocode` plugins listed below:
 
 - [@marrocode/ns-ai-kit](packages/ns-ai-kit/README.md)
 
-# How to use?
+---
 
-This workspace manages the suite of plugins listed above. 
+## ⚡ Quickstart
 
-## Prerequisites
+```bash
+npm run setup
+npm start
+````
 
-- Node 20+ is recommended
+> Node 20+ is recommended for best compatibility.
 
-In general, when in doubt with what to do, just `npm start`.
+If you ever feel lost or unsure what to do next, just run `npm start` and follow the interactive prompts.
 
-## How to add a new package to workspace?
+---
 
-```
+## 🚀 What can you do here?
+
+This monorepo streamlines development, testing, and publishing for all plugins in one place.
+
+### Add a new plugin package
+
+```bash
 npm run add
 ```
 
-At the prompt, enter the name of the new package.
+* Enter the new package name when prompted.
+* This creates a ready-to-develop plugin scaffold inside `packages/`.
+* Updates all demo apps to support your new package.
+* Shares demo code across all app flavors via `tools/demo`.
+* Updates build tools and the interactive CLI (`npm start`).
+* Automatically adds the new package to this README.
 
-- This adds a plugin harness in `packages` with the necessary boilerplate to just start developing
-- Updates all demo app flavors to support demoing the new package
-- Adds shared code in `tools/demo` where you can write demo code **once** and share across all demo flavors
-- Updates build tooling to support the new package
-- Updates the `npm start` interactive display
-- Updates the README here to list the new package
+### Add Angular support to an existing package
 
-## How to add Angular compatibility to a package
-
-```
+```bash
 npm run add-angular
 ```
 
-At the prompt, enter the name of the package to add an `angular` folder to it with the necessary boilerplate to provide Angular support to the package.
+* Enter the package name when prompted.
+* Adds an `angular/` folder with the boilerplate needed for Angular compatibility.
 
-## How to focus on just 1 package to develop in isolation
+### Develop a single package in isolation
 
-```
+```bash
 npm start
 ```
 
-- Choose the focus commands for the package you wish to focus on and hit enter.
-- All the demo app's will be updated to isolate that 1 package and for supported IDE's (currently VS Code), the source code will also become isolated in the workspace.
+* Select the package you want to focus on.
+* The demos and IDE setups will isolate that package for faster development.
+* **Tip:** Clean the demo app after focusing (`npm start` offers a clean option) to avoid stale builds.
 
-Note: *good to always clean the demo you plan to run after focusing. (You can clean any demo from `npm start` as well)*
+### Publish packages
 
-## How to publish packages?
-
-```
+```bash
 npm run publish-packages
 ```
 
-- You will be prompted for the package names to publish. Leaving blank and hitting enter will publish them all.
-- You will then be prompted for the version to use. Leaving blank will auto bump the patch version (it also handles prerelease types like alpha, beta, rc, etc. - It even auto tags the corresponding prelease type on npm).
-- You will then be given a brief sanity check 🧠😊
+* Select which packages to publish or leave blank to publish all.
+* Choose the version or leave blank to auto bump patch version.
+* Supports prerelease versions (alpha, beta, rc) and tags them correctly on npm.
+* You get a sanity check prompt before publishing, so no surprises.
 
-<h3 align="center">Made with ❤️</h3>
+---
+
+## 💡 Pro Tips
+
+* Always keep Node updated (20+) for smooth builds.
+* Use the interactive `npm start` command as your control center.
+* Share demo code once, run everywhere — saves tons of time.
+* Contribute back! This workspace is designed for growth and collaboration.
+
+---
+
+<h3 align="center">Made with ❤️ by @marrocode</h3>
+
