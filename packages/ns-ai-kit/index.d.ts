@@ -45,3 +45,14 @@ export interface OpenAIResponse {
     total_tokens: number;
   };
 }
+
+import type { GeminiMessage, GeminiResponse } from './gemini';
+import type { OpenAIMessage, OpenAIResponse } from './openai';
+
+export interface GeminiAPI {
+  chatCompletion(params: { messages: GeminiMessage[]; model?: string }): Promise<GeminiResponse>;
+}
+
+export interface OpenAIAPI {
+  chatCompletion(params: { messages: OpenAIMessage[]; model?: string; temperature?: number }): Promise<OpenAIResponse>;
+}
