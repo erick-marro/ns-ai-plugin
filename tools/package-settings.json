@@ -1,0 +1,17 @@
+{
+  "name": "@marrocode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erick-marro/ns-ai-plugin.git"
+  },
+  "keywords": ["NativeScript", "JavaScript", "TypeScript", "iOS", "Android"],
+  "author": {
+    "name": "marrocode",
+    "email": "development@marrocode.blog"
+  },
+  "bugs": {
+    "url": "https://github.com/erick-marro/ns-ai-plugin/issues"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/erick-marro/ns-ai-plugin"
+}

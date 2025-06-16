@@ -1,7 +1,8 @@
-import { EventData, Page } from '@nativescript/core';
-import { MainViewModel } from "./main-view-model";
+import { NavigatedData, Page } from '@nativescript/core';
+import { MainViewModel } from './main-view-model';
 
-export function navigatingTo(args: EventData) {
-    const page = <Page>args.object;
-    page.bindingContext = new MainViewModel();
+export function navigatingTo(args: NavigatedData) {
+  const page = <Page>args.object;
+  // Asigna el ViewModel como el contexto de la página
+  page.bindingContext = new MainViewModel();
 }

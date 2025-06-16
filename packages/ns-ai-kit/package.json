@@ -1,0 +1,35 @@
+{
+  "name": "@marrocode/ns-ai-kit",
+  "version": "0.0.1",
+  "description": "AI Kit for NativeScript",
+  "main": "index",
+  "types": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "ios": "6.0.0",
+      "android": "6.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erick-marro/ns-ai-plugin.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "TypeScript",
+    "iOS",
+    "Android"
+  ],
+  "author": {
+    "name": "Erick Marroquin",
+    "email": "development@marrocode.blog"
+  },
+  "bugs": {
+    "url": "https://github.com/erick-marro/ns-ai-plugin/issues"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/erick-marro/ns-ai-plugin",
+  "readmeFilename": "README.md",
+  "bootstrapper": "@nativescript/plugin-seed"
+}

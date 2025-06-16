@@ -37,12 +37,19 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@marrocode/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @marrocode/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
+    '@marrocode': {
+      // @marrocode/ns-ai-kit
+      'ns-ai-kit': {
+        build: {
+          script: 'nx run ns-ai-kit:build.all',
+          description: '@marrocode/ns-ai-kit: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -53,6 +60,10 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      'ns-ai-kit': {
+        script: 'nx run ns-ai-kit:focus',
+        description: 'Focus on @marrocode/ns-ai-kit',
+      },
       reset: {
         script: 'nx g @nativescript/plugin-tools:focus-packages',
         description: 'Reset Focus',

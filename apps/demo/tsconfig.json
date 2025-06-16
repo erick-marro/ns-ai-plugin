@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
-      "@demo/shared": ["../../tools/demo/index.ts"]
+      "@demo/shared": ["../../tools/demo/index.ts"],
+      "@marrocode/*": ["../../packages/*"],
+      "@marrocode/ns-ai-kit": ["../../packages/ns-ai-kit/index.d.ts"]
     }
   }
 }

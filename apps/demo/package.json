@@ -4,10 +4,12 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
+    "@marrocode/ns-ai-kit": "file:../../packages/ns-ai-kit",
     "@nativescript/core": "*"
   },
   "devDependencies": {
     "@nativescript/android": "~8.9.0",
-    "@nativescript/ios": "~8.9.0"
+    "@nativescript/ios": "~8.9.0",
+    "@nativescript/preview-cli": "1.0.14"
   }
 }

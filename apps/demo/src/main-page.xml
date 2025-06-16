@@ -1,12 +1,11 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
-  <Page.actionBar>
-    <ActionBar title="Plugin Demos" icon="" class="action-bar"/>
-  </Page.actionBar>
-  <StackLayout class="p-20">
-    <ScrollView class="h-full">
-      <StackLayout>
-        <Button text="add a package first" tap="{{ viewDemo }}" class="btn btn-primary rounded view-demo"/>
-      </StackLayout>
-    </ScrollView>
-  </StackLayout>
+    <Page.actionBar>
+        <ActionBar title="ns-ai-kit Demo" class="action-bar"/>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <Label text="{{ message }}" textWrap="true" class="text-lg text-center m-b-20" />
+
+        <Button text="Preguntar a Gemini" tap="{{ viewDemo }}" class="btn btn-primary rounded-lg" />
+    </StackLayout>
 </Page>
