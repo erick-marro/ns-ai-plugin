@@ -1,9 +1,9 @@
 {
   "name": "@marrocode/ns-ai-kit",
-  "version": "0.0.6",
+  "version": "0.0.14",
   "description": "AI Kit for NativeScript",
-  "main": "dist/index.js",
-  "types": "index.d.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "files": [
     "dist"
   ],

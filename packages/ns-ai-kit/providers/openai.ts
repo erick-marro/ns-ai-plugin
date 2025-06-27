@@ -1,5 +1,5 @@
 import { HttpClient, HttpError } from '../core/http-client';
-import { OpenAIMessage, OpenAIResponse } from '../types/openai';
+import { OpenAIMessage, OpenAIResponse } from '../typing/openai';
 
 export class OpenAIAPI {
   private httpClient: HttpClient;

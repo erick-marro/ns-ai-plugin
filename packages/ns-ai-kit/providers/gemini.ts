@@ -1,5 +1,5 @@
 import { HttpClient, HttpError } from '../core/http-client';
-import { GeminiMessage, GeminiResponse } from '../types/gemini';
+import { GeminiMessage, GeminiResponse } from '../typing/gemini';
 
 export class GeminiAPI {
   private httpClient: HttpClient;

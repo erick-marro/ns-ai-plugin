@@ -1,7 +1,7 @@
-export { HttpClient } from './core/http-client';
-export { HttpError } from './core/http-client';
+import { OpenAIAPI } from './providers/openai';
+import { GeminiAPI } from './providers/gemini';
 
-export { OpenAIAPI } from './providers/openai';
-export { GeminiAPI } from './providers/gemini';
-
-export * from './types';
+export default {
+  OpenAIAPI,
+  GeminiAPI,
+};

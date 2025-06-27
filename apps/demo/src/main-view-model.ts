@@ -1,15 +1,16 @@
 import { Observable } from '@nativescript/core';
-//@ts-ignore
-import { GeminiAPI, HttpError } from '@marrocode/ns-ai-kit';
+
+import { IGeminiAPI } from '@marrocode/ns-ai-kit';
+import { GeminiAPI } from '@marrocode/ns-ai-kit/providers/gemini';
 
 export class MainViewModel extends Observable {
   message: string = 'Presiona el botón para hacer una pregunta a la API de Gemini.';
-  private gemini: GeminiAPI;
   private isLoading = false;
+  gemini: IGeminiAPI = null;
 
   constructor() {
     super();
-    const apiKey = 'TU_API_KEY_DE_GOOGLE_AI';
+    const apiKey = 'AIzaSyBGQyEgh3aFD4qEKPd1VWDo3MTKQyATM-U';
     this.gemini = new GeminiAPI(apiKey);
   }
 
@@ -23,7 +24,7 @@ export class MainViewModel extends Observable {
     this.set('message', 'Pensando...');
     try {
       const res = await this.gemini.chatCompletion({
-        messages: [{ role: 'user', content: 'Explica qué es NativeScript en un párrafo corto.' }],
+        messages: [{ role: 'user', content: 'Explica qué es React en un párrafo corto.' }],
       });
 
       const reply = res.candidates[0]?.content.parts[0]?.text;
@@ -31,7 +32,7 @@ export class MainViewModel extends Observable {
     } catch (error) {
       console.error('Error con la API de Gemini:', error);
       let errorMessage = 'Ocurrió un error al contactar a la API.';
-      if (error instanceof HttpError) {
+      if (error) {
         errorMessage = `Error ${error.statusCode}: ${error.message}`;
       }
       this.set('message', errorMessage);
