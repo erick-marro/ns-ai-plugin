@@ -19,6 +19,21 @@
             "glob": "**/*",
             "input": "packages/ns-ai-kit/platforms/",
             "output": "./platforms/"
+          },
+          {
+            "glob": "**/*",
+            "input": "packages/ns-ai-kit/core/",
+            "output": "./core/"
+          },
+          {
+            "glob": "**/*",
+            "input": "packages/ns-ai-kit/providers/",
+            "output": "./providers/"
+          },
+          {
+            "glob": "**/*",
+            "input": "packages/ns-ai-kit/typing/",
+            "output": "./typing/"
           }
         ],
         "dependsOn": [

@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "../../dist/packages/ns-ai-kit",
+    "outDir": "../../dist/out-tsc",
     "rootDir": "."
   },
   "exclude": ["**/*.spec.ts", "**/*.test.ts", "angular"],

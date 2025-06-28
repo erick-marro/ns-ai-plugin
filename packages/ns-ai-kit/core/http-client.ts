@@ -1,4 +1,4 @@
-import { request, HttpResponse } from '@nativescript/core/http';
+import { Http, HttpResponse } from '@nativescript/core';
 
 /**
  * A custom error class to encapsulate API errors.
@@ -66,7 +66,7 @@ export class HttpClient {
   // --- Private method to handle common request logic and errors ---
   private async makeRequest(options: any): Promise<HttpResponse> {
     try {
-      const response = await request(options);
+      const response = await Http.request(options);
 
       if (response.statusCode >= 400) {
         // The server returned an error (e.g., 401, 404, 500)
