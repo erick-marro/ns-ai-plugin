@@ -1,7 +1,2 @@
-import { OpenAIAPI } from './providers/openai';
-import { GeminiAPI } from './providers/gemini';
-
-export default {
-  OpenAIAPI,
-  GeminiAPI,
-};
+export { OpenAIAPI } from './providers/openai';
+export { GeminiAPI } from './providers/gemini';

@@ -1,12 +1,11 @@
 import { Observable } from '@nativescript/core';
 
-import { IGeminiAPI } from '@marrocode/ns-ai-kit';
-import { GeminiAPI } from '@marrocode/ns-ai-kit/providers/gemini';
+import { GeminiAPI } from '@marrocode/ns-ai-kit';
 
 export class MainViewModel extends Observable {
   message: string = 'Presiona el botón para hacer una pregunta a la API de Gemini.';
   private isLoading = false;
-  gemini: IGeminiAPI = null;
+  gemini: GeminiAPI = null;
 
   constructor() {
     super();
